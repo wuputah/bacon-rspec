@@ -29,7 +29,7 @@ end
 
 desc 'Run tests'
 task :test do |t|
-  sh 'bacon -q -Ilib -I. test/*_test.rb'
+  sh 'bacon -q -Ilib -I. test/*_spec.rb'
 end
 
 task :default => :test
